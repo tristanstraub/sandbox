@@ -2,6 +2,7 @@ Demonstrate basic postgres access using podman and clojure, with database, table
 
 * Running
 
+#+BEGIN_SRC sh
 POSTGRES_PASSWORD=password ./start.sh db start
 ./start.sh db create
 ./start.sh db drop
@@ -9,3 +10,4 @@ POSTGRES_PASSWORD=password ./start.sh db start
 (cd app; clj -m app.db DB_NAME sandbox DB_HOST localhost DB_USER app_user DB_PASSWORD password)
 
 ./start.sh db stop
+#+END_SRC
