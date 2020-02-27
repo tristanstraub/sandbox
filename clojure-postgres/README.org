@@ -4,16 +4,17 @@ Demonstrate basic postgres access using podman and clojure, with database, table
 
 #+BEGIN_SRC sh
 # Start the database container
-./start.sh db start
+./start.sh start
 
 # Create the database, role, and user
-./start.sh db create
+./start.sh init
 
 # Run the application
-(cd app; clj -m app.db DB_NAME sandbox DB_HOST localhost DB_USER app_user DB_PASSWORD password)
+./start.sh run
 
 # Drop everything
 ./start.sh db drop
 
+# Stop the database
 ./start.sh db stop
 #+END_SRC
