@@ -2,4 +2,4 @@ Front end build pipeline for single page app
 
 * Running figwheel
 
-clj -A:dev -A:build-dev
+clj -A:figwheel

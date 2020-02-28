@@ -8,6 +8,6 @@
 
  :paths   ["src" "target" "resources"]
 
- :aliases {:dev       {:extra-deps {com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
-                                    com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}}
-           :build-dev {:main-opts  ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
+ :aliases {:figwheel {:extra-deps {com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
+                                   com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
+                      :main-opts  ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
