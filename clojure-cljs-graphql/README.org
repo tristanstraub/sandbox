@@ -5,3 +5,22 @@ GraphQL client/server example
 clj -m graphql.server
 
 Visit: http://localhost:8080 to use GraphiQL
+
+Example queries (take from https://github.com/walmartlabs/lacinia)
+
+#+BEGIN_SRC graphql
+{
+  hero {
+    id
+    name
+  }
+}
+#+END_SRC
+
+#+BEGIN_SRC graphql
+{
+  hero(episode: NEWHOPE) {
+    movies: appears_in
+  }
+}
+#+END_SRC
