@@ -25,13 +25,12 @@
 (defn app
   []
   (ring/ring-handler
-   (ring/router [["/" {:post {:handler #'graphql.app/handler}
-                       :get  {:handler (fn [req]
-                                         {:status  200
-                                          :headers {"Content-Type" "text/html"}
-                                          :body    (slurp (io/resource "public/graphiql.html"))})}}
-                  ]]
-                {:data {:muuntaja m/instance
+   (ring/router [["/" {:post {:handler #'graphql.app/handler}}]
+                 ["/graphiql" {:get {:handler (fn [req]
+                                                {:status  200
+                                                 :headers {"Content-Type" "text/html"}
+                                                 :body    (slurp (io/resource "public/graphiql.html"))})}}]]
+                {:data {:muuntaja   m/instance
       	                :middleware [params/wrap-params
                                      muuntaja/format-middleware
                                      coercion/coerce-exceptions-middleware

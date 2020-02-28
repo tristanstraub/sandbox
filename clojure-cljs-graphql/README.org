@@ -4,7 +4,7 @@ GraphQL client/server example
 
 clj -m graphql.server
 
-Visit: http://localhost:8080 to use GraphiQL
+Visit: http://localhost:8080/graphiql to use GraphiQL
 
 Example queries (take from https://github.com/walmartlabs/lacinia)
 
