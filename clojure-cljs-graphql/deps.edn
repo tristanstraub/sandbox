@@ -1,0 +1,19 @@
+{:paths ["src" "resources"]
+ :deps    {org.clojure/clojure            {:mvn/version "1.10.1"}
+           integrant                      {:mvn/version "0.8.0"}
+           ch.qos.logback/logback-classic {:mvn/version "1.2.3"}
+           org.clojure/tools.logging      {:mvn/version "0.4.1"}
+
+           ;; server
+           http-kit                       {:mvn/version "2.3.0"}
+           ring                           {:mvn/version "1.7.1"}
+           metosin/reitit                 {:mvn/version "0.4.2"}
+           metosin/reitit-ring            {:mvn/version "0.4.2"}
+           com.walmartlabs/lacinia        {:mvn/version "0.36.0"}
+
+           ;; client
+}
+
+ :aliases {:figwheel {:extra-deps {com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
+                                   com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
+                      :main-opts  ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
