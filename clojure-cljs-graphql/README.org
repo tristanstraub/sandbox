@@ -2,9 +2,11 @@ GraphQL client/server example
 
 * Server
 
-clj -m graphql.server
+#+BEGIN_SRC sh
+mkdir target; clj -m graphql.server
+#+END_SRC
 
-Visit: http://localhost:8080/graphiql to use GraphiQL
+Visit: http://localhost:8080/graphiql.html to use GraphiQL
 
 Example queries (take from https://github.com/walmartlabs/lacinia)
 
@@ -24,3 +26,11 @@ Example queries (take from https://github.com/walmartlabs/lacinia)
   }
 }
 #+END_SRC
+
+* Client
+
+#+BEGIN_SRC sh
+clj -A:figwheel
+#+END_SRC
+
+Visit http://localhost:8080/

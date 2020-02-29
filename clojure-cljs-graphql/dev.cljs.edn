@@ -1,1 +1,1 @@
-{:main client.main}
+{:main graphql.client}

@@ -1,4 +1,4 @@
-{:paths ["src" "resources"]
+{:paths ["src" "resources" "target"]
  :deps    {org.clojure/clojure            {:mvn/version "1.10.1"}
            integrant                      {:mvn/version "0.8.0"}
            ch.qos.logback/logback-classic {:mvn/version "1.2.3"}
@@ -12,8 +12,11 @@
            com.walmartlabs/lacinia        {:mvn/version "0.36.0"}
 
            ;; client
-}
+           rum                            {:mvn/version "0.11.3"}
+           district0x/graphql-query       {:mvn/version "1.0.6"}
+           cljs-http                      {:mvn/version "0.1.46"}
+           org.clojure/core.async {:mvn/version "1.0.567"}}
 
- :aliases {:figwheel {:extra-deps {com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
-                                   com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
-                      :main-opts  ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
+ :aliases {:figwheel {:extra-deps  {com.bhauman/figwheel-main       {:mvn/version "0.2.4-SNAPSHOT"}
+                                    com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
+                      :main-opts   ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
