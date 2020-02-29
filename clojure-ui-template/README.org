@@ -2,4 +2,6 @@ Front end build pipeline for single page app
 
 * Running figwheel
 
+#+BEGIN_SRC sh
 clj -A:figwheel
+#+END_SRC
