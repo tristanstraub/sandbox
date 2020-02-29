@@ -6,8 +6,9 @@
 
            hiccup                          {:mvn/version "1.0.5"}}
 
- :paths   ["src" "target" "resources"]
+ :paths   ["src" "resources"]
 
- :aliases {:figwheel {:extra-deps {com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
-                                   com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
-                      :main-opts  ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
+ :aliases {:figwheel {:extra-paths ["target"]
+                      :extra-deps  {com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
+                                    com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
+                      :main-opts   ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
