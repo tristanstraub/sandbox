@@ -1,6 +1,6 @@
 
 * Examples
 
-- [[clojure-cljs-graphql]] Client/server graphql example in clojure(script)
-- [[clojure-postgres]] Minimal example to connect to postgres from clojure
-- [[clojure-ui-template]] Minimal clojurescript rum/react front end
+- [[clj-cljs-graphql]] Client/server graphql example in clojure(script)
+- [[clj-postgres]] Minimal example to connect to postgres from clojure
+- [[cljs-ui-template]] Minimal clojurescript rum/react front end
