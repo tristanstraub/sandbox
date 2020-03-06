@@ -1,0 +1,7 @@
+Using babylonjs from clojurescript
+
+* Running figwheel
+
+#+BEGIN_SRC sh
+clj -A:figwheel
+#+END_SRC

@@ -2,6 +2,8 @@ This is a set of examples in clojure(script) covering basic components of a stan
 
 * Examples
 
-- [[clj-cljs-graphql]] Client/server graphql example in clojure(script)
-- [[clj-postgres]] Minimal example to connect to postgres from clojure
-- [[cljs-ui-template]] Minimal clojurescript rum/react front end
+| Example          | Description           | Languages       |
+| [[clj-cljs-graphql]] | graphql client/server | Clojure(script) |
+| [[clj-postgres]]     | postgres              | Clojure         |
+| [[cljs-ui-template]] | *rum* front end       | Clojurescript   |
+| [[cljs-babylonjs]]   | bablyonjs             | Clojurescript   |
