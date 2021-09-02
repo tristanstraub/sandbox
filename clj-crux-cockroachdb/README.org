@@ -1,0 +1,5 @@
+* Running
+
+#+BEGIN_SRC sh
+./cmd.sh start && DB_USER=maxroach clj -m clj-crux.example
+#+END_SRC

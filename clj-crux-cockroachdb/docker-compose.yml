@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  roach1:
+    image: cockroachdb/cockroach:v21.1.8
+    ports:
+      - "26257:26257"
+      - "8080:8080"
+    volumes:
+      - "${PWD}/roach1/data:/cockroach/cockroach-data:z"
+      - "${PWD}/roach1/certs:/cockroach/cockroach-certs:z"
+      - "${PWD}/roach1/keys:/cockroach/cockroach-keys:z"
+
+    command: start-single-node --certs-dir=/cockroach/cockroach-certs

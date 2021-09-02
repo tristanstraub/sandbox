@@ -1,0 +1,4 @@
+{:deps {pro.juxt.crux/crux-core   {:mvn/version "1.18.1"}
+        pro.juxt.crux/crux-jdbc   {:mvn/version "1.18.1"}
+        org.clojure/java.jdbc     {:mvn/version "0.7.11"}
+        org.postgresql/postgresql {:mvn/version "42.2.9"}}}
